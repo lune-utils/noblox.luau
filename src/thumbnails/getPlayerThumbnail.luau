@@ -104,6 +104,8 @@ return function(
 		userIds = { userIds }
 	end
 
+	print(userIds)
+
 	local cropType = string.lower(cropType or "body")
 	local cropKeys = Object.keys(eligibleSizes)
 	if not Array.includes(cropKeys, cropType) then
@@ -139,7 +141,9 @@ return function(
 		local data = rawData:unwrapOk()
 		local imageData = data and data.data or nil
 		if imageData and #imageData > 0 then
-			return data.data[1].imageUrl
+			local imageUrl = imageData[1].imageUrl
+			print(imageUrl)
+			return imageUrl
 		end
 	end
 

@@ -4,6 +4,7 @@ description = "A Luau API wrapper for Roblox."
 authors = ["0xJWLabs <hi@0xjwlabs.dev>"]
 repository = "https://github.com/lune-utils/noblox.luau"
 license = "MIT"
+private = true
 
 [engines]
 lune = "^0.9.4"
